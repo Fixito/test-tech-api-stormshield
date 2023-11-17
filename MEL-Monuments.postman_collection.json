@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "6f2768a8-e4f2-4ffb-a878-02fbcb3921e9",
+		"name": "MEL-Monuments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12957316"
+	},
+	"item": [
+		{
+			"name": "Get All Monuments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/monuments?date&lat&long&radius&type&ville",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"monuments"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": null
+						},
+						{
+							"key": "lat",
+							"value": null
+						},
+						{
+							"key": "long",
+							"value": null
+						},
+						{
+							"key": "radius",
+							"value": null
+						},
+						{
+							"key": "type",
+							"value": null
+						},
+						{
+							"key": "ville",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Monument to Favourites",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/best-monument/8f8ee3bc093f0abf371e78be9ee4cade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"best-monument",
+						"8f8ee3bc093f0abf371e78be9ee4cade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Monument Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"types"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
